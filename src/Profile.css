@@ -38,17 +38,17 @@
 }
 .profile__product{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 50px;
     justify-content: center;
+    border-bottom: 2px;
+    border-color: black;
 }
 .product__image{
+    display: flex;
     height: 20%;
     max-height: auto;
-    /* padding: 50px; */
     border-radius: 10%;
+    justify-content: center;
 
-}
-.swiper__slide{
-    height: auto;
 }

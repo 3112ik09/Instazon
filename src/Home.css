@@ -4,7 +4,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1500px;
-    background-image: url('back.jpg');
+    background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+    background-size: 25px 25px;
 }
 .home__image
 {

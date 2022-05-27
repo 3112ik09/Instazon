@@ -22,31 +22,29 @@ function Header () {
         <img  className ="header__logo"
         src="images/ll.png"/>
         </Link>
-        <div className="header__search">
-            <input className = "header__searchInput"/>
-            {/* logo */}
-            <SearchIcon className="header__searchLogo"/>
-
-        </div>
-        <FaceIcon />
+        
         <div className='header__nav'>
-        <Link to={!user && '/login'}>
-            <div onClick={handleAuthenticaton} className='header__option'>
-              <span className='header__optionlineOne'> Hello {!user ? 'Guest' : user.email}</span>
-              <span className='header__optionlineTwo'> {user ? 'Sign Out' : 'Sign In'} </span>
-            </div>
-        </Link>
-            <div className='header__option'>
-            <span className='header__optionlineOne'> Your</span>
-            <span className='header__optionlineTwo'> Basket</span>
+          <div className='header__shop'>
+              Shop
+          </div>
+            <FaceIcon />
+            <Link to={!user && '/login'}>
+                <div onClick={handleAuthenticaton} className='header__option'>
+                  <span className='header__optionlineOne'> Hello {!user ? 'Guest' : user.email}</span>
+                  <span className='header__optionlineTwo'> {user ? 'Sign Out' : 'Sign In'} </span>
+                </div>
+            </Link>
+                <div className='header__option'>
+                <span className='header__optionlineOne'> Your</span>
+                <span className='header__optionlineTwo'> Basket</span>
 
-        </div>
-        <Link to='/c'> 
-            <div className ="header__optionBasket">
-              <ShoppingBasketIcon />
-              <span className='header__optionLineTwo header__optionBasketCount'> {basket?.length} </span>
             </div>
-        </Link>
+            <Link to='/c'> 
+                <div className ="header__optionBasket">
+                  <ShoppingBasketIcon />
+                  <span className='header__optionLineTwo header__optionBasketCount'> {basket?.length} </span>
+                </div>
+            </Link>
 
         </div>
     </div>

@@ -3,7 +3,8 @@
     height:100vh;
     align-items: center;
     flex-direction: column;
-    background-image: url('back.jpg');
+    background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+    background-size: 25px 25px;
     z-index: -1;
 
 }
@@ -16,14 +17,20 @@
     margin-left: auto;
     margin-right: auto;
 }
+.login__components{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1000px;
+  
+  /* flex-direction: row; */
+}
 .login__logo:hover{
   transform:scale(1.5);
 }
 .login__container{
+    /* margin-left: 100px; */
     width: 300px;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
     border-radius: 5px;
     border: 1px solid darkgray;
     padding: 20px;

@@ -11,3 +11,6 @@
 .slide__image:hover{
     transform:scale(1.2);
 }
+.swiper__slide{
+  height: 600px;
+}

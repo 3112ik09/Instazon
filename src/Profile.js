@@ -30,57 +30,60 @@ function Profile() {
                 <div className='product__image'>
                             <img className='product__image' src="images/jisoo1.jpg"></img>
                         </div>
-                <Swiper
-                    modules={[Navigation , EffectFade]}
-                    speed={800}
-                    spaceBetween={50}
-                    slidesPerView={2}
-                    loop={true}
-                    className="myswiper"
-                >
-                    <SwiperSlide className='swiper__slide'>
-                    <Product1
-                        id="90"
-                        title="Dior - Short Dress"
-                        price={3100}
-                        image="images/j1d.png"
-                    />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper__slide'>
-                    <Product1
-                            id="91"
-                            title="Dior - Transpaent Blouse"
-                            price={1000}
-                           
-                            image="images/j2d.png"
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide className='swiper__slide'>
+                <div class='product_swiper'>
+                    <Swiper
+                        modules={[Navigation , EffectFade]}
+                        speed={800}
+                        spaceBetween={50}
+                        slidesPerView={3}
+                        loop={true}
+                        className="myswiper"
+                    >
+                        <SwiperSlide className='swiper__slide1'>
                         <Product1
-                            id="92"
-                            title="Dior - Brown Belt"
-                            price={960}
-                           
-                            image="images/j3d.png"
+                            id="90"
+                            title="Dior - Short Dress"
+                            price={3100}
+                            image="images/j1d.png"
                         />
-                    </SwiperSlide>
-                    
-                </Swiper>
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper__slide1'>
+                        <Product1
+                                id="91"
+                                title="Dior - Transpaent Blouse"
+                                price={1000}
+                            
+                                image="images/j2d.png"
+                            />
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper__slide1'>
+                            <Product1
+                                id="92"
+                                title="Dior - Brown Belt"
+                                price={960}
+                            
+                                image="images/j3d.png"
+                            />
+                        </SwiperSlide>
+                        
+                    </Swiper>
+                </div>
         </div>
         <br></br>
         <div className='profile__product'>
                 <div className='product__image'>
                             <img className='product__image' src="images/jisoo2.jpg"></img>
-                        </div>
+                </div>
+                <div class='product_swiper'>
                 <Swiper
                     modules={[Navigation , EffectFade]}
-                    speed={800}
+                    // speed={800}
                     spaceBetween={50}
-                    slidesPerView={2}
+                    slidesPerView={3}
                     loop={true}
                     className="myswiper"
                 >
-                    <SwiperSlide className='swiper__slide'>
+                    <SwiperSlide className='swiper__slide1'>
                     <Product1
                         id="94"
                         title="Dior - Fall-winter"
@@ -89,7 +92,7 @@ function Profile() {
                         image="images/jj1.png"
                     />
                     </SwiperSlide>
-                    <SwiperSlide className='swiper__slide'>
+                    <SwiperSlide className='swiper__slide1'>
                     <Product1
                             id="93"
                             title="Dior - Oblique"
@@ -98,7 +101,7 @@ function Profile() {
                             image="images/jj2.png"
                         />
                     </SwiperSlide>
-                    <SwiperSlide className='swiper__slide'>
+                    <SwiperSlide className='swiper__slide1'>
                         <Product1
                             id="95"
                             title="Montaigne Belt"
@@ -106,7 +109,7 @@ function Profile() {
                             image="images/jj3.png"
                         />
                     </SwiperSlide>
-                    <SwiperSlide className='swiper__slide'>
+                    <SwiperSlide className='swiper__slide1'>
                                 <Product1
                         id="96"
                         title="clou Ring"
@@ -116,6 +119,7 @@ function Profile() {
                     </SwiperSlide>
                     
                 </Swiper>
+            </div>
         </div>
     </div>
   )

@@ -3,10 +3,11 @@
     height:80px;
     display:flex;
     align-items: center;
-    background-color: #8675A9;
+    background-color: #f5e0ff;
     position: sticky;
     top :0;
     z-index: 100;
+    justify-content: space-between;
     /* border-bottom-right-radius: 25%;
     border-bottom-Left-radius: 25%; */
 }
@@ -17,6 +18,15 @@
     align-items: center;
     border-radius: 24px;
     padding: 10px;
+}
+.header__shop{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
 }
 .header__searchInput
 {
@@ -49,7 +59,7 @@
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
-    color: white;
+    color: black;
 }
 .header__optionlineOne
 {
@@ -66,7 +76,7 @@
 {
     display: flex;
     align-items: center;
-    color: white;
+    color: black;
     
 }
 .header__optionBasket:hover{
